@@ -1,20 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h>
-/**
- * main - returns alphabets
- * Return: Always 0 (Success)
- */
 
 int main(void)
 {
+    /* Declare a variable and initialize it with the first member of 
+       the range [a - z] 
+    */
 
-int ch = 'a';
+    char alphabet = 'a';
 
-while (ch <= 't')
-{
-	putchar (ch);
-	ch++;
+     /* check to see if the current value of your variable is less than 
+         or the same as the last member (z) of the given range. While 
+         the value is less, go ahead and print the value 
+      */
+
+    while (alphabet <= 'z')
+    {
+        // print the value of the variable 
+        putchar(alphabet);
+
+        // increment the variable (ie: a becomes b)
+        alphabet++;
+    }
+
+    putchar('\n');
+    return (0);
 }
-putchar('\n');
-return (0);
-}
+
